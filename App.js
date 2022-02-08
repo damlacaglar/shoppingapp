@@ -5,13 +5,16 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import LoginScreen from "./src/screens/login-screen";
 import Tab1 from "./src/screens/tabs/tab1";
 import Tab2 from "./src/screens/tabs/tab2";
 import Tab3 from "./src/screens/tabs/tab3";
 import DrawerContent from "./src/drawer-content";
 import Account1 from "./src/screens/account/account1";
 import Account2 from "./src/screens/account/account2";
+import LoginScreen from "./src/screens/login-screen";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { faStore, faSearch, faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
+
 
 const BottomTab = createMaterialBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -25,13 +28,24 @@ export default class MyComponent extends Component {
   createBottomTabbedPage = () => {
     return (
       <BottomTab.Navigator
-        activeColor="#ffefe7"
-        inactiveColor="#bd9985"
-        barStyle={{ backgroundColor: "#4a572a" }}
-      >
-        <BottomTab.Screen name="Tab1" component={Tab1} options={{title:"Ürünler"}} />
-        <BottomTab.Screen name="Tab2" component={Tab2} options={{title:"Ara"}}/>
-        <BottomTab.Screen name="Tab3" component={Tab3} options={{title:"Sepet"}}/>
+        activeColor="#de6d20"
+        inactiveColor="#c3c3c3"
+        barStyle={{ backgroundColor: "#4a572a", borderColor: "#8f5d41", borderWidth: 2 }}>
+        <BottomTab.Screen name="Tab1" component={Tab1} options={{
+          title: "Ürünler", tabBarIcon: ({}) => (
+            <FontAwesomeIcon icon={faStore} size={26} color={ 'white' } />
+          ),
+        }} />
+        <BottomTab.Screen name="Tab2" component={Tab2} options={{
+          title: "Ara", tabBarIcon: ({}) => (
+            <FontAwesomeIcon icon={faSearch} size={26} color={'white'} />
+          ),
+        }} />
+        <BottomTab.Screen name="Tab3" component={Tab3} options={{
+          title: "Sepetim", tabBarIcon: ({}) => (
+            <FontAwesomeIcon icon={faCartArrowDown} size={26} color={'white'}/>
+          ),
+        }} />
       </BottomTab.Navigator>
     );
   };
@@ -61,12 +75,12 @@ export default class MyComponent extends Component {
     const Stack = createNativeStackNavigator();
     return (
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen
             name="Home"
             children={this.createDrawerPage}
-            // options={{ headerShown: false }}
+            options={{ headerShown: false }}
           />
         </Stack.Navigator>
       </NavigationContainer>

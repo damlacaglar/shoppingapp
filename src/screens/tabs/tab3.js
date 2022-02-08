@@ -154,7 +154,7 @@ export default class Tab3 extends Component {
                 alignItems: "center",
               }}
             >
-              <ActivityIndicator size={"large"} />
+              <ActivityIndicator size={"small"} />
             </View>
           ) : (
             <FlatList

@@ -21,18 +21,18 @@ export default class MyComponent extends Component {
     return (
       <View style={{ flexDirection: "column", flex: 1 }}>
         <View style={this.styles.topPart}>
-          <View>
-            <TouchableOpacity onPress={()=>{
-                this.props.navigation.navigate("Main");
+          <View style={this.styles.txtPart}>
+            <TouchableOpacity onPress={() => {
+              this.props.navigation.navigate("Account");
             }}>
-              <Text>Shop</Text>
+              <Text style={{ fontWeight: "600", fontSize: 20,color:"#8f5d41" }}>Account</Text>
             </TouchableOpacity>
           </View>
-          <View>
-            <TouchableOpacity onPress={()=>{
-                this.props.navigation.navigate("Account");
+          <View style={this.styles.txtPart} >
+            <TouchableOpacity onPress={() => {
+              this.props.navigation.navigate("Main");
             }}>
-              <Text>Account</Text>
+              <Text style={{ fontWeight: "600", fontSize: 20,color:"#8f5d41"}}>Shop</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -53,13 +53,29 @@ export default class MyComponent extends Component {
       margin: 10,
       backgroundColor: "#FFFFFF",
       flex: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      borderRadius: 30,
+      borderWidth:3,
+      borderColor:"#9d9494"
     },
+    txtPart:{
+      borderColor: "black",
+      borderWidth:1.5,
+      backgroundColor: "white",
+      borderRadius:20,
+      margin:5 ,
+      padding:10,
+      },
+
     bottomPart: {
       margin: 10,
-      backgroundColor: "#b9b9b9",
+      backgroundColor: "#9d9494",
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
+      borderRadius: 20,
+      borderWidth: 1
     },
     btnContainer: {
       flex: 1,
@@ -68,7 +84,8 @@ export default class MyComponent extends Component {
     },
     btnText: {
       fontWeight: "bold",
-      color: "#044e5d",
-    },
+      color: "black",
+
+    }
   });
 }

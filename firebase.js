@@ -5,13 +5,13 @@ import firebase from "firebase";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAF2TkK4gDrWIPIQAPzQ20H0AKlhxMLz8w",
-  authDomain: "authornek-6bf3b.firebaseapp.com",
-  projectId: "authornek-6bf3b",
-  storageBucket: "authornek-6bf3b.appspot.com",
-  messagingSenderId: "237239002274",
-  appId: "1:237239002274:web:dabb5a9ce07d27b14223fb"
-};
+  apiKey: "AIzaSyBAmDUVMJ-FFT7Yvm7bFfjAg392c7hL3d8",
+  authDomain: "shoppingapp-e17ad.firebaseapp.com",
+  projectId: "shoppingapp-e17ad",
+  storageBucket: "shoppingapp-e17ad.appspot.com",
+  messagingSenderId: "1041252892138",
+  appId: "1:1041252892138:web:88127fcd04627ca35b8693"
+  }
 
 // Initialize Firebase
 let app;
