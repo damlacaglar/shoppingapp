@@ -24,7 +24,7 @@ export default class ProductItem extends Component {
           <View style={this.styles.productContentContainer}>
             <View style={this.styles.productDescriptionContainer}>
               <Text style={this.styles.productDescription}>
-                {this.props.product.description.substring(0,220)}
+                {this.props.product.description}
               </Text>
             </View>
             <View style={this.styles.imageContainer}>
@@ -37,7 +37,7 @@ export default class ProductItem extends Component {
         </View>
         <View style={this.styles.productBottom}>
           <View style={this.styles.productPriceContainer}>
-            <Text style={this.styles.productPrice}>
+            <Text style={this.styles.productPrice}> Fiyat:
               {this.props.product.price}
             </Text>
           </View>

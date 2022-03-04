@@ -17,21 +17,21 @@ export default class Tab2 extends Component {
     };
   }
 
-  searchHandler = () => {
+  // searchHandler = () => {
     // var result = tab1Data.filter((x) => x.name == this.state.productName);
-    // if (result.length <= 0) {
-    //   this.setState({
-    //     itemNotFound: true,
-    //   });
-    // } else {
-    //   this.setState({
-    //     itemNotFound: false,
-    //   });
-    // }
-    // this.setState({
-    //   resultData: result,
-    // });
-  };
+    //  if (result.length <= 0) {
+      //  this.setState({
+        //  itemNotFound: true,
+      //  });
+    //  } else {
+      //  this.setState({
+        //  itemNotFound: false,
+      //  });
+    //  }
+    //  this.setState({
+      //  resultData: result,
+    //  });
+  // }
 
   renderItem = ({ item }) => {
     return <ProductItem product={item} />;

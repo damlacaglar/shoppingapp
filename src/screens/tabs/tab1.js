@@ -38,7 +38,7 @@ export default class Tab1 extends Component {
       <ScrollView>
         {this.state.products.length <= 0 ? (
           <View style={{ justifyContent: "center", alignItems: "center" }}>
-            {/* <ActivityIndicator size="small"></ActivityIndicator> */}
+            {<ActivityIndicator size="small"></ActivityIndicator> }
           </View>
         ) : (
           <FlatList

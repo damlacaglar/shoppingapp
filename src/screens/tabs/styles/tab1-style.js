@@ -5,7 +5,7 @@ const tab1Style = {
     borderWidth: 1.5,
     borderRadius: 5,
     margin: 10,
-    height: 150,
+    height: 200,
   },
   productTop: {
     flex: 5,
@@ -27,19 +27,22 @@ const tab1Style = {
   productDescriptionContainer: {
     paddingLeft: 5,
     paddingTop: 5,
-    flex: 4,
+    flex: 2,  
   },
   productContentContainer: {
     flexDirection: "row",
     flex: 1,
+    
   },
   productDescription: {
     fontSize: 12,
+    fontWeight:"bold",
+    
   },
   imageContainer: {
     flex: 2,
     margin: 3,
-    justifyContent: "center",
+    //justifyContent: "center",
     alignItems: "center",
   },
   imageBox: {},
@@ -54,13 +57,13 @@ const tab1Style = {
     paddingTop: 3,
   },
   productButtonContainer: {
-    flex: 2,
+    flex: 4,
     flexDirection: "row",
     justifyContent: "space-around",
   },
   imageStyle: {
-    width: 90,
-    height: 90,
+    width: 120,
+    height:120,
   },
 };
 export { tab1Style };

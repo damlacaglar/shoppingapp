@@ -116,7 +116,7 @@ export default class Tab3 extends Component {
         <View style={[this.styles.cartColumn, { flex: 2 }]}>
           <Text>{item.cartItem.price}</Text>
         </View>
-        <View style={[this.styles.cartColumn, { flex: 1,backgroundColor:"#d00f0f" }]}>
+        <View style={[this.styles.cartColumn, { flex: 1,backgroundColor: "#c95313" }]}>
           <DeleteButton item={item} deleteConfirm={this.deleteComplated}/>
         </View>
       </View>
@@ -129,7 +129,7 @@ export default class Tab3 extends Component {
         <View style={this.styles.headerContainer}>
           <View style={[this.styles.cartColumn, { flex: 5 }]}>
             <Text style={{ fontWeight: "bold", color: "#626264" }}>
-              Urun Adı
+              ÜrÜn Adı
             </Text>
           </View>
           <View style={[this.styles.cartColumn, { flex: 1 }]}>
@@ -166,7 +166,7 @@ export default class Tab3 extends Component {
         </View>
         <View style={this.styles.footerContainer}>
           <View style={{ marginRight: 5 }}>
-            <Text style={{ fontWeight: "bold", color: "#626264" }}>Toplam</Text>
+            <Text style={{ fontWeight: "bold", color: "#626264" }}>Toplam=</Text>
           </View>
           <View style={{ marginRight: 5 }}>
             <Text style={{ fontWeight: "bold", color: "#626264" }}>
@@ -176,7 +176,7 @@ export default class Tab3 extends Component {
         </View>
         <View style={this.styles.orderButton}>
           <TouchableOpacity onPress={this.saveOrderHandler}>
-            <Text style={{ fontWeight: "bold", color: "#c95313" }}>
+            <Text style={{ fontWeight: "bold", color: "#c95313"}}>
               Sipariş Ver
             </Text>
           </TouchableOpacity>
