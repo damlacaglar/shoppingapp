@@ -14,7 +14,7 @@ export default class Tab1 extends Component {
 
   componentDidMount() {
     fireStore
-      .collection("product")
+      .collection("productDetail")
       .get()
       .then((response) => {
         var list = [];

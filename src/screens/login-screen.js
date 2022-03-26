@@ -63,7 +63,7 @@ export default class LoginScreen extends Component {
                             email: text,
                         });
                     }}></TextInput>
-                    <Text style={this.styles.txt_footer}>Password</Text>
+                    <Text style={this.styles.txt_footer}> Password</Text>
                     <TextInput style={this.styles.txtInput} onChangeText={(text) => {
                         this.setState({
                             password: text,
@@ -77,6 +77,12 @@ export default class LoginScreen extends Component {
                     <TouchableOpacity style={this.styles.btnContainer} onPress={this.loginHandler}>
                         <Text style={this.styles.btnText}>Giriş</Text>
                     </TouchableOpacity>
+                    {/* <TouchableOpacity style={this.styles.btnContainer} onPress={this.registerHandler}>
+                        <Text style={this.styles.btnText}>Kayıt</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={this.styles.btnContainer} onPress={this.loginHandler}>
+                        <Text style={this.styles.btnText}>Giriş</Text>
+                    </TouchableOpacity> */}
                 </View>
             </View>
         </View>);
